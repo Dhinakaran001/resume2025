@@ -44,7 +44,7 @@ const projectImage = [
     isLink: true,
     description:
       "A vibrant and dynamic poster designed in Adobe Illustrator to promote the delivery of farm-fresh vegetables within 10 minutes. The artwork features bold typography, colorful illustrations of fresh produce, and a modern layout that emphasizes speed and quality. The design effectively captures the essence of freshness and convenience, making it visually appealing and engaging for the target audience.",
-    category: "Others",
+    category: "Personal",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const projectImage = [
     isLink: false,
     description:
       "My work using Runway ML involved leveraging its AI-powered generative tools to create a futuristic cityscape from a text prompt. The process likely included Text-to-Image Generation: You provided a descriptive text prompt, and Runway ML's AI models transformed it into a visual representation.	Customization & Refinement: You may have adjusted parameters like style, color, or composition to fine-tune the output.",
-    category: "Personal",
+    category: "Others",
     subImg: [
       { img: Picture4, title: "Green sustainable city" },
       { img: Picture3, title: "Floating city" },
@@ -72,7 +72,7 @@ const projectImage = [
     isLink: true,
     description:
       "The dancing model, created using MidJourney, is a plain, colorless figure focused solely on executing basic dance moves. Without elaborate textures or colors, the model emphasizes pure motion and form, showcasing the fundamental essence of dance. The movements are likely smooth and natural, capturing rhythm, balance, and fluidity without distractions. This minimalist approach highlights pose, gesture, and motion dynamics, making it an ideal base for further refinement or animation.",
-    category: "Personal",
+    category: "Others",
   },
 ];
 
