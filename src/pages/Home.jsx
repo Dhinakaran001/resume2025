@@ -63,9 +63,12 @@ function Home() {
               </Typography>
               <img src={verify} alt="" width={"26px"} height={"26px"} />
             </Box>
-            <Typography sx={{ color: "#636869" }}>
-              Graphic Designer &nbsp; Bengaluru, India
-            </Typography>
+            <Box sx={{ color: "#636869", display: "flex" }}>
+              <Typography>Graphic Designer</Typography>
+              <ul style={{ padding: 0, margin: "auto 0px auto 20px" }}>
+                <li>Bengaluru, India</li>
+              </ul>
+            </Box>
           </Box>
         </Box>
       </Box>

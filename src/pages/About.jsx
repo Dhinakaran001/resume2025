@@ -227,7 +227,9 @@ function About() {
           }}
         >
           <Typography>Graphic Designer</Typography>
-          <Typography>Bengaluru, India</Typography>
+          <ul style={{ padding: 0, margin: "auto 0px auto 10px" }}>
+            <li>Bengaluru, India</li>
+          </ul>
         </Box>
         <a
           href="https://www.example.com" // Replace with your desired URL
@@ -280,10 +282,21 @@ function About() {
                   </Typography>
                 </Box>
                 <Box sx={{ mb: { sm: 0, xs: 1 } }}>
-                  <Typography sx={{ fontSize: "14px", mr: 1 }}>
-                    {item.description}{" "}
-                    <span style={{ marginLeft: "5px" }}>{item.location}</span>
-                  </Typography>
+                  <Box sx={{ display: { sm: "flex", xs: "block" }, mr: 1 }}>
+                    <Typography sx={{ fontSize: "14px" }}>
+                      {item.description}
+                    </Typography>
+                    <ul
+                      style={{
+                        padding: 0,
+                        margin: "auto 0px auto 20px",
+                        fontSize: "14px",
+                        display: "inline-block",
+                      }}
+                    >
+                      <li>{item.location}</li>
+                    </ul>
+                  </Box>
                 </Box>
                 <Box sx={{ display: { sm: "none", xs: "block" } }}>
                   <Typography

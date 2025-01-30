@@ -4,6 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Be from "../assets/img/Be.jpeg";
+import ScrollToTop from "../layout/ScrollToTop";
 
 function Footer() {
   return (
@@ -94,7 +95,9 @@ function Footer() {
             py: 2,
             borderRadius: "0px 0px 20px 20px",
             color: "#000",
+            cursor: "pointer",
           }}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           Back to Top
         </Box>

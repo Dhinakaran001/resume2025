@@ -54,7 +54,7 @@ const projectImage = [
     link: "",
     isLink: false,
     description:
-      "My work using Runway ML involved leveraging its AI-powered generative tools to create a futuristic cityscape from a text prompt. The process likely included Text-to-Image Generation: You provided a descriptive text prompt, and Runway ML's AI models transformed it into a visual representation.	Customization & Refinement: You may have adjusted parameters like style, color, or composition to fine-tune the output.",
+      "My work using Runway ML involved leveraging its AI-powered generative tools to create a futuristic cityscape from a text prompt. The process likely included:",
     category: "Others",
     subImg: [
       { img: Picture4, title: "Green sustainable city" },
@@ -122,7 +122,7 @@ function ViewProject() {
         </Typography>
       </Box>
       <Divider sx={{ my: 4 }} />
-      {filteredData.isLink && (
+      {filteredData.isLink ? (
         <>
           <Box sx={{ textAlign: { sm: "left", xs: "center" } }}>
             <Typography sx={{ color: "#636869", fontWeight: 600 }}>
@@ -133,11 +133,33 @@ function ViewProject() {
             </a>
           </Box>
           <Divider sx={{ my: 4 }} />
+          <Box>
+            <Typography>{filteredData.description}</Typography>
+          </Box>
+        </>
+      ) : (
+        <>
+          <Box sx={{ mb: 3 }}>
+            <Typography>{filteredData.description}</Typography>
+            <ul>
+              <li>
+                <span style={{ fontWeight: "bold", marginRight: "10px" }}>
+                  Text-to-Image Generation:
+                </span>
+                You provided a descriptive text prompt, and Runway ML's AI
+                models transformed it into a visual representation.
+              </li>
+              <li>
+                <span style={{ fontWeight: "bold", marginRight: "10px" }}>
+                  Customization & Refinement:
+                </span>
+                You may have adjusted parameters like style, color, or
+                composition to fine-tune the output.
+              </li>
+            </ul>
+          </Box>
         </>
       )}
-      <Box sx={{ mb: 3 }}>
-        <Typography>{filteredData.description}</Typography>
-      </Box>
 
       {!filteredData.isLink && (
         <Grid2 container spacing={{ xs: 1, md: 2 }} sx={{ mb: 5 }}>
