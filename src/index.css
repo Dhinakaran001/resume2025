@@ -37,17 +37,17 @@ h1 {
   background-color: #ebeeef;
 }
 
-.link {
-  color: #006a9f;
-}
-
 .i-love-codeing {
   position: absolute;
   bottom: 0;
 }
 
+.link {
+  color: #006a9f;
+}
+
 .link:hove {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {

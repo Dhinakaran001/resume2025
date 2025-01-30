@@ -232,6 +232,7 @@ function About() {
         <a
           href="https://www.example.com" // Replace with your desired URL
           target="_blank"
+          style={{ textDecoration: "underline", color: "#006a9f" }}
         >
           Download CV
         </a>

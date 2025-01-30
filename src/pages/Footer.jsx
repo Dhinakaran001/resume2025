@@ -3,6 +3,7 @@ import { Box, Typography, Button, IconButton } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Be from "../assets/img/Be.jpeg";
 
 function Footer() {
   return (
@@ -51,7 +52,7 @@ function Footer() {
               boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
             }}
           >
-            <LinkedInIcon />
+            <img src={Be} alt="Be" width={"24px"} height={"24px"} />
           </IconButton>
           <IconButton
             sx={{

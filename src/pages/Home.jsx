@@ -5,7 +5,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import ScrollableGallery from "./ScrollableGallery";
-import Footer from "./Footer";
+import verify from "../assets/img/verify.jpeg";
+import Be from "../assets/img/Be.jpeg";
 
 const hashtag = [
   "#Photoshop",
@@ -51,9 +52,17 @@ function Home() {
           }}
         >
           <Box sx={{ textAlign: { sm: "left", xs: "center" } }}>
-            <Typography sx={{ fontSize: "22px", fontWeight: 600 }}>
-              Sidhart Sai
-            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { sm: "inherit", xs: "center" },
+              }}
+            >
+              <Typography sx={{ fontSize: "22px", fontWeight: 600, mr: 1 }}>
+                Sidharth sai
+              </Typography>
+              <img src={verify} alt="" width={"26px"} height={"26px"} />
+            </Box>
             <Typography sx={{ color: "#636869" }}>
               Graphic Designer &nbsp; Bengaluru, India
             </Typography>
@@ -82,7 +91,7 @@ function Home() {
           }}
         >
           <IconButton sx={{ m: 1, backgroundColor: "#ebeeef", color: "#000" }}>
-            <LinkedInIcon />
+            <img src={Be} alt="Be" width={"23px"} height={"23px"} />
           </IconButton>
           <IconButton sx={{ m: 1, backgroundColor: "#ebeeef", color: "#000" }}>
             <LinkedInIcon />
@@ -165,7 +174,7 @@ function Home() {
           </Typography>
         </Box>
       </Box>
-      <Box sx={{ mb: 10, display: "inline-block" }}>
+      <Box sx={{ mb: 10 }}>
         <ScrollableGallery
           scrollContainerRef={scrollContainerRef}
           isAutoScroll={isAutoScroll}
